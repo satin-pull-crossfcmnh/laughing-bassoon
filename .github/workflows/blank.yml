@@ -2,16 +2,18 @@ name: 🚀 SEVER AI STV PREMIUM
 
 on:
   workflow_dispatch:
+#  push:
+#    branches: [ "main" ]
     inputs:
       duration:
         description: '🕐 Thời gian sử dụng'
         required: false
-        default: '5h50m'
+        default: '5h40m'
         type: choice
         options:
         - '5m'
         - '1h' 
-        - '5h50m'
+        - '5h40m'
 
 jobs:
   build:
@@ -19,10 +21,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        go: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, A, B, C, D, E, F]
-        flag: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, A, B, C, D, E, F]
-    timeout-minutes: 350
-    steps:
+        go: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, A, B, C, D, E, F, G, H, I, J]
+#        flag: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, A, B]
+    timeout-minutes: 340    steps:
       # BANNER CHÀO MỪNG
       - name: 🎯 KHỞI ĐỘNG HỆ THỐNG
         run: |
