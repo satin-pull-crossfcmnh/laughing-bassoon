@@ -23,7 +23,8 @@ jobs:
       matrix:
         go: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, A, B, C, D, E, F, G, H, I, J]
 #        flag: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, A, B]
-    timeout-minutes: 340    steps:
+    timeout-minutes: 340
+    steps:
       # BANNER CHÀO MỪNG
       - name: 🎯 KHỞI ĐỘNG HỆ THỐNG
         run: |
