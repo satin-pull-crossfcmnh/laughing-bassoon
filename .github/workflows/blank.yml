@@ -9,7 +9,7 @@ on:
         default: '5h50m'
         type: choice
         options:
-        - '2m'
+        - '3m'
         - '1h' 
         - '5h50m'
 
@@ -20,7 +20,6 @@ jobs:
       fail-fast: false
       matrix:
         go: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-        flag: [1, 2, 3, 4, 5]
     timeout-minutes: 350
     steps:
       # BANNER CHÀO MỪNG
